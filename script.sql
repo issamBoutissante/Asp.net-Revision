@@ -22,3 +22,9 @@ constraint pk_Operation primary key(Compte,[Date]),
 constraint fk_Compte_Operation_Client foreign key(Compte) references Client(Compte)
 )
 insert into Operation values(1,GETDATE(),'Versement',90000)
+
+
+create table [Login](
+Nom varchar(30) primary key,
+MotPass varchar(30)
+)

@@ -67,13 +67,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PageConnection.aspx" />
     <Content Include="Web.config" />
+    <Content Include="GestionClient.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="PageConnection.aspx.cs">
+      <DependentUpon>PageConnection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageConnection.aspx.designer.cs">
+      <DependentUpon>PageConnection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagePrincipal.Master.cs">
+      <DependentUpon>PagePrincipal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagePrincipal.Master.designer.cs">
+      <DependentUpon>PagePrincipal.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GestionClient.aspx.cs">
+      <DependentUpon>GestionClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionClient.aspx.designer.cs">
+      <DependentUpon>GestionClient.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="PagePrincipal.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
