@@ -53,6 +53,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -70,6 +71,11 @@
     <Content Include="PageConnection.aspx" />
     <Content Include="Web.config" />
     <Content Include="GestionClient.aspx" />
+    <Content Include="GestionOperation.aspx" />
+    <Content Include="PageAfficherClient.aspx" />
+    <Content Include="PageGenererFichierXML.aspx" />
+    <Content Include="ConsumerService.aspx" />
+    <Content Include="WebServiceClient.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database.cs" />
@@ -95,6 +101,38 @@
     </Compile>
     <Compile Include="GestionClient.aspx.designer.cs">
       <DependentUpon>GestionClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionOperation.aspx.cs">
+      <DependentUpon>GestionOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionOperation.aspx.designer.cs">
+      <DependentUpon>GestionOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageAfficherClient.aspx.cs">
+      <DependentUpon>PageAfficherClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageAfficherClient.aspx.designer.cs">
+      <DependentUpon>PageAfficherClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageGenererFichierXML.aspx.cs">
+      <DependentUpon>PageGenererFichierXML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageGenererFichierXML.aspx.designer.cs">
+      <DependentUpon>PageGenererFichierXML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumerService.aspx.cs">
+      <DependentUpon>ConsumerService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsumerService.aspx.designer.cs">
+      <DependentUpon>ConsumerService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceClient.asmx.cs">
+      <DependentUpon>WebServiceClient.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

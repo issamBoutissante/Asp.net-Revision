@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Operation>
+    <Nom>Boutissante</Nom>
+    <Prenom>Issam</Prenom>
+    <Date_x0020_Operation>2021-06-14T00:00:00+02:00</Date_x0020_Operation>
+    <Type_x0020_Operation>Versement</Type_x0020_Operation>
+    <Montant>90000.0000</Montant>
+  </Operation>
+  <Operation>
+    <Nom>boutissante</Nom>
+    <Prenom>oussama</Prenom>
+    <Date_x0020_Operation>2021-06-14T00:00:00+02:00</Date_x0020_Operation>
+    <Type_x0020_Operation>Retrait</Type_x0020_Operation>
+    <Montant>1000.0000</Montant>
+  </Operation>
+</NewDataSet>

@@ -13,6 +13,7 @@ Email varchar(50),
 Mdp varchar(20)
 )
 insert into Client values(1,'Boutissante','Issam','Tidili Mesefioua','Boutissante@gmail.com','boutissante')
+
 create table Operation(
 Compte int,
 [Date] date,
@@ -23,8 +24,8 @@ constraint fk_Compte_Operation_Client foreign key(Compte) references Client(Comp
 )
 insert into Operation values(1,GETDATE(),'Versement',90000)
 
-
 create table [Login](
 Nom varchar(30) primary key,
 MotPass varchar(30)
 )
+insert into [Login] values('boutissante','boutissante')

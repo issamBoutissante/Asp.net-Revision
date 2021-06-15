@@ -53,7 +53,10 @@
     <form id="form1" runat="server">
           <header>
             <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/GestionClient.aspx" CausesValidation="False">Gestion Client</asp:LinkButton>
-            <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/PageConnection.aspx" CausesValidation="False">Gestion Operation</asp:LinkButton>
+            <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/GestionOperation.aspx" CausesValidation="False">Gestion Operation</asp:LinkButton>
+            <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/PageAfficherClient.aspx" CausesValidation="False">Afficher Client</asp:LinkButton>
+            <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/PageGenererFichierXML.aspx" CausesValidation="False">Generer Fichier XML</asp:LinkButton>
+            <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/ConsumerService.aspx" CausesValidation="False">Consomer Web Service</asp:LinkButton>
         </header>
         <div style="padding-left:20px;">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
