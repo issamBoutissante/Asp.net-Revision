@@ -13,7 +13,13 @@ namespace Exercice_de_Revision_WCS_1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                if (Session["Login"] == null)
+                {
+                    Response.Redirect("~/PageConnection.aspx");
+                }
+            }
         }
 
         protected void Affecter_Click(object sender, EventArgs e)
